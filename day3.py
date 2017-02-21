@@ -10,7 +10,7 @@ def validtri(x):
         return False
 
 
-lines = open('./input/input.txt')
+lines = open('./input/input1.txt')
 processed = []
 processed2 = []
 valid = 0
@@ -23,3 +23,5 @@ for p in processed2:
     if validtri(p):
         valid += 1
 print(valid)
+
+# part 1 was also much easier.

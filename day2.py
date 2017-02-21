@@ -85,3 +85,5 @@ dir4 = set(set4, dir3.output)
 dir4.calculate()
 dir5 = set(set5, dir4.output)
 dir5.calculate()
+
+# part 1 was much easier. dont think solution needs to be included
