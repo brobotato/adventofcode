@@ -18,7 +18,7 @@ for x in range(len(string.ascii_lowercase)):
     morse_reverse[string.ascii_lowercase[x]] = x
 
 
-def removedashes(string):
+def remove_dashes(string):
     dashes = 0
     for x in range(len(string)):
         if string[x] == '-':
@@ -61,7 +61,7 @@ def alphabetize(list):
     return ''.join([l[0] for l in list][:5])
 
 
-def byfrequency(string):
+def by_frequency(string):
     lettercount = {}
     for x in string:
         lettercount[x] = 0
@@ -73,11 +73,11 @@ def byfrequency(string):
 for l in lines:
     processed.append(l.split())
 for x in range(len(processed)):
-    keys.append(removedashes(sorted(processed[x][0][:-10])))
+    keys.append(remove_dashes(sorted(processed[x][0][:-10])))
     checksums.append(processed[x][0][-6:-1])
     sector_ids.append(processed[x][0][-10:-7])
 for k in keys:
-    keyssorted.append(byfrequency(k))
+    keyssorted.append(by_frequency(k))
 for x in keyssorted:
     x.sort(key=operator.itemgetter(1), reverse=True)
 for x in range(len(processed)):

@@ -1,4 +1,4 @@
-def validtri(x):
+def valid_tri(x):
     s1, s2, s3 = x
     s1, s2, s3 = round(int(float(s1))), round(int(float(s2))), round(int(float(s3)))
     a1 = s1 + s2
@@ -20,7 +20,7 @@ for x in range(0, 3, 1):
     for y in range(0, len(processed), 3):
         processed2.append([processed[y][x], processed[y + 1][x], processed[y + 2][x]])
 for p in processed2:
-    if validtri(p):
+    if valid_tri(p):
         valid += 1
 print(valid)
 
