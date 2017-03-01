@@ -24,4 +24,4 @@ while len(input[0]) > 20:
 for m in mult_list:
     final_length += len(m[0]) * m[1]
 final_length += len(input[0])
-print(mult_list)
+print(final_length)
